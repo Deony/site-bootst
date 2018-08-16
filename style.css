@@ -49,6 +49,9 @@ body {
 		overflow-y: scroll;
 		height: 322px;
 	}
+	.recipes .recipe-description > p {
+		margin-bottom: 0px;
+	}
 }
 
 @media screen and (max-width: 480px) {
