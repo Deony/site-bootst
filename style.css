@@ -1,0 +1,88 @@
+:root {
+	--main-bg-color: #f5f2ee;
+}
+
+body {
+	margin: 3% 0%;
+	background: var(--main-bg-color);
+	font-family: 'Myriad Pro';
+}
+
+/*Recipes*/
+.recipes .recipe {
+	margin-bottom: 4%;
+}
+
+.recipes .recipe-description {
+	background: url("images/Rectangle1.png");
+	padding: 3% 1.5%;
+}
+
+.recipes .recipe h2, .page-link {
+	font-weight: bold;
+	color: #585b5c;
+}
+
+.recipes .recipe p {
+	color: #585b5c;
+}
+
+.page-link {
+	background: url("images/Rectangle2.png");	
+	border: none;
+}
+
+.page-link:hover {
+	color: white;
+	background: #ccc1b2;
+	box-shadow: inset 0px 0px 8px 3px #b7ac9d;
+}
+
+.btn-link {
+	color: #0e67a7;
+	font-weight: bold;
+}
+
+
+@media screen and (max-width: 1000px) {
+	.recipes .recipe-description {
+		overflow-y: scroll;
+		height: 322px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.recipes > div {
+		flex-direction: column;
+	}
+}
+
+/*FORM*/
+form {
+	background: var(--main-bg-color);
+	padding: 10% 7%;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+
+button.close {
+	position: absolute;
+	right: 2%;
+	top: 2%;
+	z-index: 1;
+}
+
+.form-control {
+	border-radius: 10px;
+}
+
+form .send {
+	background: #0082cb;
+	color: white;
+	border-radius: 50px;
+	position: absolute;
+	right: 7%;
+	bottom: 7%;
+	max-width: 250px;
+}
